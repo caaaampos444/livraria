@@ -76,7 +76,7 @@ public class Livro {
 	
 	public boolean aplicaDescontoDe() {
 		if(descontoPercentual<=20) {
-			valorComDesconto=(descontoPercentual/100)*valor;
+			valorComDesconto=valor-((descontoPercentual/100)*valor);
 			return true;
 		}else {
 			return false;
